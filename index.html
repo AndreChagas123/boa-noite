@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #ff4d4d; /* Fundo vermelho */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        button {
+            background-color: #990000; /* Vermelho mais escuro */
+            color: white;
+            padding: 15px 30px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #cc0000; /* Mudança de cor no hover */
+        }
+
+        #content {
+            display: none;
+            margin-top: 20px;
+        }
+
+        .rose {
+            font-size: 4em; /* 4 vezes o tamanho padrão da fonte */
+            margin-bottom: 10px;
+        }
+
+        #message {
+            font-size: 1.5em; /* 1.5 vezes o tamanho padrão da fonte */
+            color: white;
+            line-height: 1.0; /* Espaçamento entre linhas */
+        }
+    </style>
+    <title>boa noite</title>
+</head>
+<body>
+
+    <button onclick="mostrarConteudo()">Clique Aqui</button>
+
+    <div id="content">
+        <p id="message">Bem hoje pensei em te desejar um boa noite diferente , então estive pensando sobre isso na tarde. Então
+            passando para te desejar um bom retorno para a sua casa , imagino o quanto deve ser dificil viajar todas as noites 
+            mas sei de seu empenho e vai valer a pena!!! Estou aqui para o que precisar e pode sempre contar comigo, mas enfim 
+            te desejo uma boa noite Clara , bom descanso e durma bem :)
+        </p>
+        <p class="rose">🌹</p>
+    </div>
+
+    <script>
+        function mostrarConteudo() {
+            var button = document.querySelector('button');
+            button.style.display = 'none';
+
+            var contentDiv = document.getElementById('content');
+            contentDiv.style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
